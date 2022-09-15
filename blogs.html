@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Test Monster</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="nav-bar">
+        <h1 class="title">
+            <a href="index.html"><img src="./logo.png" /></a>
+        </h1>
+        <div class="page-link">
+            <a href="index.html">Home</a>
+            <a href="blogs.html">Blogs</a>
+        </div>
+    </div>
+    <main class="main-container">
+        <div>
+            <h2 class="header">Blogs</h2>
+        </div>
+        <!-- blogs section -->
+        <section>
+            <div class="blog">
+                <h3>What difference between the Global scope & Block scope?</h3>
+                <p>
+                    <span style="font-weight: bold">Global scope: </span> The variables
+                    defined outside of any function or curly brackets are known as
+                    global variables and have global scope. Global scope means that the
+                    variables can be accessed from any part of that program, any
+                    function or conditional state can access that variable. <br />
+                    <br />
+                    <span style="font-weight: bold">Block scope: </span>Block scope is
+                    also a sub-type of local scope. The block scope can be defined as
+                    the scope of the variables inside the curly brackets {}. Now, these
+                    curly brackets can be of loops, or conditional statements, or
+                    something else. You are only allowed to refer to these variables
+                    from within the curly brackets {}.
+                </p>
+            </div>
+            <div class="blog">
+                <h3>What even_lopp in javaScript?</h3>
+                <p>
+                    The event loop is the secret behind JavaScript’s asynchronous
+                    programming. JS executes all operations on a single thread, but
+                    using a few smart data structures, it gives us the illusion of
+                    multi-threading. Let’s take a look at what happens on the back-end.
+                    <br />
+                    <br />
+                    The call stack is responsible for keeping track of all the
+                    operations in line to be executed. Whenever a function is finished,
+                    it is popped from the stack. The event queue is responsible for
+                    sending new functions to the stack for processing. It follows the
+                    queue data structure to maintain the correct sequence in which all
+                    operations should be sent for execution.
+                </p>
+            </div>
+            <div class="blog">
+                <h3>What difference between the localstorage & sessionstorage ?</h3>
+                <p>
+                    SessionStorage is similar to localStorage ; the difference is that
+                    while data in localStorage doesn't expire, data in sessionStorage is
+                    cleared when the page session ends. Whenever a document is loaded in
+                    a particular tab in the browser, a unique page session gets created
+                    and assigned to that particular tab.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script src="./history.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
